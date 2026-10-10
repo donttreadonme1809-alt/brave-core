@@ -1,5 +1,5 @@
 diff --git a/components/feature_engagement/public/feature_constants.cc b/components/feature_engagement/public/feature_constants.cc
-index 116829771fc1f4722ad22b09dea78eb9ae8998da..c9b09a85207f0f84556e8c334756bc4f5545f3dd 100644
+index 5641deb06f662b853df209fe9dac7b312d94c7d7..9d95255d8cd8bb775c2b015797dec6bb1324a036 100644
 --- a/components/feature_engagement/public/feature_constants.cc
 +++ b/components/feature_engagement/public/feature_constants.cc
 @@ -75,9 +75,9 @@ BASE_FEATURE(kIPHDesktopCustomizeChromeAutoOpenFeature,

@@ -1,8 +1,8 @@
 diff --git a/chrome/browser/android/tab_features.cc b/chrome/browser/android/tab_features.cc
-index f969c7758037c6b45849a13f760b87e411d84061..87297ab11a010b506ec7cdb9948c6d7288cb57e3 100644
+index 7c2c5a41d37b9a9ee66478d173cfbdee6373ae28..7993d769491d5a3281279cfbc971a2c9e2c4ea7d 100644
 --- a/chrome/browser/android/tab_features.cc
 +++ b/chrome/browser/android/tab_features.cc
-@@ -442,10 +442,10 @@ TabFeatures::TabFeatures(content::WebContents* web_contents, Profile* profile) {
+@@ -544,10 +544,10 @@ TabFeatures::TabFeatures(content::WebContents* web_contents, Profile* profile) {
        GetUserDataFactory().CreateInstance<SearchEngineTabHelper>(*tab, *tab,
                                                                   web_contents);
  

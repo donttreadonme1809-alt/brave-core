@@ -1,8 +1,8 @@
 diff --git a/ios/chrome/browser/flags/about_flags.mm b/ios/chrome/browser/flags/about_flags.mm
-index ac096b3c6cde4c1cc739a6333484a2822e49801e..5aa3bf78b05af549e683e78232df740e3e030378 100644
+index f8a29c889abd7859fbc0e91d09d90640f8892961..3a96b978abe832c02ecd0bbdaa989b0f64e5b80a 100644
 --- a/ios/chrome/browser/flags/about_flags.mm
 +++ b/ios/chrome/browser/flags/about_flags.mm
-@@ -1365,6 +1365,7 @@ const FeatureEntry::FeatureVariation kPageClassificationVariations[] = {
+@@ -1453,6 +1453,7 @@ const FeatureEntry::FeatureVariation kEnterpriseProxyErrorHandlingVariations[] =
  //
  // When adding a new choice, add it to the end of the list.
  constexpr auto kFeatureEntries = std::to_array<flags_ui::FeatureEntry>({

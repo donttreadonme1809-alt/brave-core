@@ -1,5 +1,5 @@
 diff --git a/third_party/blink/common/BUILD.gn b/third_party/blink/common/BUILD.gn
-index 8e635b0da327aae8377bf2260113f395c835fa85..0d4e552a7b858ae06818e4d223277f65b6dec9de 100644
+index b587acd0944e3c2f46b6b55dd9ba35962151be7e..2e310be59da3c6504c6e0239f555ce12bb8f0863 100644
 --- a/third_party/blink/common/BUILD.gn
 +++ b/third_party/blink/common/BUILD.gn
 @@ -2,6 +2,7 @@
@@ -10,7 +10,7 @@ index 8e635b0da327aae8377bf2260113f395c835fa85..0d4e552a7b858ae06818e4d223277f65
  import("//build/config/features.gni")
  import("//build/config/rust.gni")
  import("//build/nocompile.gni")
-@@ -328,6 +329,7 @@ source_set("common") {
+@@ -329,6 +330,7 @@ source_set("common") {
      "//ui/events/mojom:event_latency_metadata_mojom",
      "//ui/latency/mojom:shared_mojom_traits",
    ]

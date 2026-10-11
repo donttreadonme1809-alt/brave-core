@@ -1,5 +1,5 @@
 diff --git a/chrome/browser/net/profile_network_context_service.cc b/chrome/browser/net/profile_network_context_service.cc
-index 4030b4a3d3f4940fbc4527f1177aa6d33190a0c9..8164d15a1d9ee48166d379ffdd5ec01025e3698c 100644
+index 4030b4a3d3f4940fbc4527f1177aa6d33190a0c9..5af082902b25ca5fd92e83974d1194ba5df27a1b 100644
 --- a/chrome/browser/net/profile_network_context_service.cc
 +++ b/chrome/browser/net/profile_network_context_service.cc
 @@ -739,6 +739,7 @@ network::mojom::CTPolicyPtr ProfileNetworkContextService::GetCTPolicy() {
@@ -10,3 +10,14 @@ index 4030b4a3d3f4940fbc4527f1177aa6d33190a0c9..8164d15a1d9ee48166d379ffdd5ec010
    return network::mojom::CTPolicy::New(std::move(excluded),
                                         std::move(excluded_spkis));
  }
+@@ -1346,6 +1347,10 @@ void ProfileNetworkContextService::ConfigureNetworkContextParamsInternal(
+   g_browser_process->system_network_context_manager()
+       ->ConfigureDefaultNetworkContextParams(network_context_params);
+ 
++  if (profile_->IsTor()) {
++    network_context_params->system_proxy_resolver.reset();
++  }
++
+   network_context_params->accept_language = ComputeAcceptLanguage();
+   network_context_params->enable_referrers = enable_referrers_.GetValue();
+ 

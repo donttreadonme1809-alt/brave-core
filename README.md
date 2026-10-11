@@ -1,4 +1,5 @@
-![Brave Browser](./docs/images/brave.svg)
+git clone git@github.com:brave/brave-core.git path-to-your-project-folder/src/brave
+cd path-to-your-project-folder/src/brave![Brave Browser](./docs/images/brave.svg)
 
 # Brave Core
 
